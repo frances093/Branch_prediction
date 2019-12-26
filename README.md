@@ -31,7 +31,7 @@
 
        string readfile() 
 
-2.　依次讀入目標字串的各個字元。
+2.　依次讀入目標字串的各個字元。  
 3.　根據 predictor 目前內容判定預測為 taken 或 not taken ，並和目前讀到的字元做比較，印出本次執行為 taken 或 nottaken 以及是否預測 miss ，並將是否 miss 回傳：
 
        bool printout(int *mode, int *p, int predict, bool outcome, bool miss) 
@@ -44,16 +44,16 @@
             
     以上 function 會依照目前 predictior 的狀態印出相應的 state （SN、WN、WT、ST）
 
-4.　根據此次從目標字串讀入的字元修改 predictor 狀態。
+4.　根據此次從目標字串讀入的字元修改 predictor 狀態。  
 *    此時若 history 數值大於 3 或小於 0 ，會呼叫：
     
             int fixhistory(int history) 
         
-        用於將 history 恢復成 0 （SN） 或 3 （ST）。
+        用於將 history 恢復成 0 （SN） 或 3 （ST）。  
 
-5.　重複 2. ~ 4. 直到整個字串讀完。
-6.　將統計結果 print 在執行視窗。
-7.　輸出統計結果至檔案。
+5.　重複 2. ~ 4. 直到整個字串讀完。  
+6.　將統計結果 print 在執行視窗。  
+7.　輸出統計結果至檔案。  
 8.　結束運行。     
 ## Inhance
 ### Input：
@@ -106,7 +106,7 @@
 3. 生成輸入檔中所指定的 entry 數：
 
             void generatepre()
-4. 根據目前的 pc （一開始設為 0 ）找到目前要使用的 predictor 。
+4. 根據目前的 pc （一開始設為 0 ）找到目前要使用的 predictor 。  
 5. 根據前一步結果 access predictor 取得目前該 predictor 處於哪個 mode ，並印出目前 predictor 的狀態：
             
         int set2bitcount(Predictor *ptrp, int now_pred)
@@ -148,11 +148,11 @@
     *    此 function 可能會呼叫：
 
                 void fixhistory(int *history) 
-            防止 history 的數值超過有效範圍（ 0 ~ 3 ）。
-12. 重複 4. ~ 11. 直至 pc 數值超過 instruction 範圍為止。
-13. 將本次執行統計的 predict 次數及 miss 次數寫入檔案：
+            防止 history 的數值超過有效範圍（ 0 ~ 3 ）。  
+12. 重複 4. ~ 11. 直至 pc 數值超過 instruction 範圍為止。  
+13. 將本次執行統計的 predict 次數及 miss 次數寫入檔案：  
 
 		void outputmisscount(int predictime, int miss)
             
-14. print 出本次執行統計的 predict 次數及 miss 次數。
+14. print 出本次執行統計的 predict 次數及 miss 次數。  
 15. 結束運行。
