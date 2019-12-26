@@ -145,7 +145,7 @@
 
         void fixpredictor(bool outcome, int now_mode, Predictor *ptrp)
 
-    *    此 function 可能會呼叫：
+    *    此 function 會呼叫：
 
                 void fixhistory(int *history) 
             防止 history 的數值超過有效範圍（ 0 ~ 3 ）。  
