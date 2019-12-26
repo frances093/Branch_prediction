@@ -1,0 +1,2 @@
+	State			pred.	outcome	miss?	
+0x114	(00,SN,SN,SN,SN)	N	N	

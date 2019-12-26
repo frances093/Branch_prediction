@@ -1,0 +1,8 @@
+14
+0x110	addi R1,R0,0
+0x114	addi R2,R0,0
+	Loop:
+0x11C	beq R1,R2,End
+0x120	subi R2,R2,1
+0x124	beq R0,R0,Loop
+	End:

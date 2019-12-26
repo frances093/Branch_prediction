@@ -1,0 +1,3 @@
+Total entry: 14
+Total predict time: 3
+Total miss time: 1

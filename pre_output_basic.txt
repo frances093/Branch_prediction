@@ -1,0 +1,2 @@
+Total predict time: 3
+Total miss time: 2
