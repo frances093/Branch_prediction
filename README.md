@@ -1,11 +1,10 @@
 # Branch prediction
-* 使用語言：C++。
-
 ## 簡介：  
 * 實作branch prediction，至少要做一種預測器。output為預測結果與misprediction統計數量
 
     * 基礎要求：2bit counter, input為Taken/Not Taken序列 (predictor的entry數量為無限大)
     * 高分要求：2bit history, input為一個序列的PC與instruction 同時可以設定predictor的entry數量
+* 使用語言：C++。
 
 
 ## Basic
